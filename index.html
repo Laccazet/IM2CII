@@ -9,14 +9,14 @@
 
     <div id="content">
         
-        <div id="back" style="visibility: hidden;">
+        <div id="back" style="display: none;">
             <canvas></canvas>
         </div>
     
         <div id="left">
-            <div id="preview">
+            <div id="preview-container">
                 <h1>PREVIEW</h1>
-                <img id="preview-container" src="dog.jpg">
+                <img id="preview" src="">
             </div>
         </div>
         
@@ -24,12 +24,11 @@
 
             <div id="input-container">
                 <h2>Insert image</h2>
-                <input type="file" id="input" onchange="read(this);">
+                <input type="file" id="input">
             </div>
 
             <div id="text-container">
                 <textarea></textarea>
-                <button>Copy</button>
             </div>
             
         </div>
