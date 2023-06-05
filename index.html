@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IM2CII</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="content">
+        
+        <div id="back" style="visibility: hidden;">
+            <canvas></canvas>
+        </div>
+    
+        <div id="left">
+            <div id="preview">
+                <h1>PREVIEW</h1>
+                <img id="preview-container" src="dog.jpg">
+            </div>
+        </div>
+        
+        <div id="right">
+
+            <div id="input-container">
+                <h2>Insert image</h2>
+                <input type="file" id="input" onchange="read(this);">
+            </div>
+
+            <div id="text-container">
+                <textarea></textarea>
+                <button>Copy</button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
